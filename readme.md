@@ -4,23 +4,24 @@ A DynamoDB-based store implementation for LangGraph that allows long term memory
 
 This implements both sync and async methods for [BaseStore](https://langchain-ai.github.io/langgraph/reference/store/#langgraph.store.base.BaseStore)
 
-bash
+## Install package
+```
 pip install langgraph-store-dynamodb
+```
 
 ## Usage
 
 ### Basic Initialization
 
-python
+```
 from langgraph_store_dynamodb import DynamoDBStore
 
-# Initialize the store with a table name
 store = DynamoDBStore(
     table_name="your-dynamodb-table-name",
     max_read_request_units=10,  # Optional, default is 10
     max_write_request_units=10  # Optional, default is 10
 )
-
+```
 
 ### Alternative Initialization Using Context Manager
 
@@ -30,7 +31,6 @@ from langgraph_dynamodb_checkpoint import DynamoDBStore
 with DynamoDBStore.from_conn_info(table_name="your-dynamodb-table-name") as store:
     # Use the store here
 ```
-
 
 ## Parameters
 
