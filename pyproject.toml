@@ -7,7 +7,7 @@ name = "langgraph_store_dynamodb"
 version = "0.1.2"
 description = "DynamoDB dtore for LangGraph"
 authors = [{name = "Kamal", email = "skamalj@github.com"}]
-readme = "README.md"
+readme = "readme.md"
 requires-python = ">=3.9"
 dependencies = [
     "langchain-core",
@@ -31,9 +31,6 @@ dev = [
     "mypy"
 ]
 
-# Define long description using README.md
-long_description = { file = "README.md" }
-long_description_content_type = "text/markdown"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/langgraph_store_dynamodb"]
