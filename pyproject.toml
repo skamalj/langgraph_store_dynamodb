@@ -17,14 +17,14 @@ dependencies = [
     "aioboto3>=13.3.0"
 ]
 
-[project.urls]
-Repository = "https://github.com/skamalj/langgraph_store_dynamodb.git"
-
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+[project.urls]
+Repository = "https://github.com/skamalj/langgraph_store_dynamodb.git"
 
 [project.optional-dependencies]
 dev = [
