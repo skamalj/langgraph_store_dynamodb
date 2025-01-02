@@ -4,18 +4,22 @@ build-backend = "hatchling.build"
 
 [project]
 name = "langgraph_store_dynamodb"
-version = "0.1.2"
+version = "0.1.3"
 description = "DynamoDB dtore for LangGraph"
 authors = [{name = "Kamal", email = "skamalj@github.com"}]
 readme = "readme.md"
 requires-python = ">=3.9"
 dependencies = [
-    "langchain-core",
-    "langgraph",
-    "boto3",
-    "botocore",
-    "aioboto3"
+    "langchain-core>=0.3.28",
+    "langgraph>=0.2.60",
+    "boto3>=1.35.81",
+    "botocore>=1.35.81",
+    "aioboto3>=13.3.0"
 ]
+
+[project.urls]
+Repository = "https://github.com/skamalj/langgraph_store_dynamodb.git"
+
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
