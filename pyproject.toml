@@ -31,6 +31,10 @@ dev = [
     "mypy"
 ]
 
+# Define long description using README.md
+long_description = { file = "README.md" }
+long_description_content_type = "text/markdown"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/langgraph_store_dynamodb"]
 
